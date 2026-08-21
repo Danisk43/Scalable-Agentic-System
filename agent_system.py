@@ -255,12 +255,3 @@ def build_agent_graph():
 agent_system = build_agent_graph()
 
 
-if __name__ == "__main__":
-    try:
-        mermaid_code = agent_system.get_graph().draw_mermaid()
-        print("\n--- Compiled LangGraph Mermaid Diagram ---")
-        print(mermaid_code)
-        print("------------------------------------------\n")
-    except Exception as e:
-        print(f"Could not generate Mermaid diagram: {e}")
-
